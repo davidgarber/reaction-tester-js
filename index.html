@@ -12,8 +12,14 @@
     <script type="text/javascript">
 
       document.getElementById("square").onclick=function() {
-        document.getElementById("square").style.display="none";
+        this.style.display="none";
       }
+
+      setTimeout(function() {
+
+        document.getElementById("square").style.display="block";
+
+      }, 3000);
 
     </script>
 
