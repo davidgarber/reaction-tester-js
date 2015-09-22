@@ -2,15 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"
-    <meta name="viewport" content="width=device-width, intial-scale=1">
-    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <title>Reaction Tester</title>
   </head>
   <body>
-    <div id="square">
+    <div id="square"></div>
 
-    </div>
+    <script type="text/javascript">
+
+      document.getElementById("square").onclick=function() {
+        document.getElementById("square").style.display="none";
+      }
+
+    </script>
 
   </body>
 </html>
