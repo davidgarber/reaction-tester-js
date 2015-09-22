@@ -11,19 +11,26 @@
 
     <script type="text/javascript">
 
-      document.getElementById("square").onclick=function() {
-        this.style.display="none";
+      function makeSquare() {
+
+        var time=Math.random();
+
+        time=time*5000;
+
+        setTimeout(function() {
+
+          document.getElementById("square").style.display="block";
+
+        }, time);
       }
 
-      var time=Math.random();
+      document.getElementById("square").onclick=function() {
+        this.style.display="none";
 
-      time=time*5000;
+        makeSquare();
+      }
 
-      setTimeout(function() {
-
-        document.getElementById("square").style.display="block";
-
-      }, 3000);
+      makeSquare();
 
     </script>
 
