@@ -39,7 +39,16 @@
 
         setTimeout(function() {
 
+          if (Math.random()>0.5) {
+
           document.getElementById("square").style.borderRadius="100px";
+
+        } else {
+
+          document.getElementById("square").style.borderRadius="0";
+
+        }
+
 
           document.getElementById("square").style.backgroundColor=getRandomColor();
 
