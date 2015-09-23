@@ -16,6 +16,15 @@
 
     <script type="text/javascript">
 
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF'.split('');
+      var color = '#';
+      for (var i = 0; i < 6; i++ ) {
+          color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
       var clickedTime; var createdTime; var reactionTime;
 
       Date.now();
@@ -26,9 +35,13 @@
 
         var time=Math.random();
 
-        time=time*5000;
+        time=time*3000;
 
         setTimeout(function() {
+
+          document.getElementById("square").style.borderRadius="100px";
+
+          document.getElementById("square").style.backgroundColor=getRandomColor();
 
           document.getElementById("square").style.display="block";
 
